@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
+    "build:pre": "vue-tsc -b && vite build --mode staged",
+    "build:pro": "vue-tsc -b && vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint",
     "lint:fix": "eslint --ignore-pattern .gitignore --fix src",
@@ -13,7 +15,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "^3.5.12"
+    "axios": "^1.7.7",
+    "normalize.css": "^8.0.1",
+    "vue": "^3.5.12",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
